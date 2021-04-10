@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<section class="jumbotron text-center" style="padding: 5px; border: 2px red;">
+    <div class="container">
+        <!-- <h1 class="title">Movie name: {{ movieTitle }}</h1>
+        <br/>
+        {% if movieDetails.imdb_rating %}
+        <h8 style="margin: left 10px;">
+            IMDB Rating: {{movieDetails.imdb_rating}}
+        </h8>
+        <br/>
+        <div style="margin-top: 10px;">
+            <p style="text-align: justify; text-justify: inter-word;" 
+                class="lead text-muted">
+                {{ movieDetails.description}}
+            </p>
+        </div>
+        <br/>
+        <div>
+        <br/>
+        <dl>
+            <dd><h3>Genres</h3></dd>
+            {% for genre in movieDetails.genres %}
+            <dd>{{genre}}</dd>
+            {% endfor %}
+        </dl>
+    </div>
+    {% endif %}
+    <br/><br/> -->
+        <div>
+            <iframe width="100%" height="400" src="{{ trailerUrl }}"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
